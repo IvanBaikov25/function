@@ -1,9 +1,9 @@
 <?php
-function alphabeticalOrder($str) {
+function alphabeticalOrder(string $str): string {
     $arr = str_split($str);
     sort($arr);
     return implode('', $arr);
 }
 $input = 'alphabetical';
-$result = alphabeticalOrder($input);
-echo $result;
+$output = alphabeticalOrder($input);
+echo $output; 
